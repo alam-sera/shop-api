@@ -1,0 +1,27 @@
+###INDEX
+GET http://localhost:3000/shops
+
+###SHOW
+GET http://localhost:3000/shops/2
+
+###CREATE
+POST http://localhost:3000/shops
+Content-Type: application/json 
+
+{
+  "name": "Rune Scimitar",
+  "price": "$450",
+  "description": "A scimitar made out of a costly ore: rune",
+  "stock": 50
+}
+
+###UPDATE
+PATCH http://localhost:3000/shops/1
+Content-Type: application/json 
+
+{
+  "name": "Party Hat",
+  "price": "$10,000,000",
+  "description": "A hat made for partying",
+  "stock": 2
+}
